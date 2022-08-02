@@ -1,16 +1,16 @@
 # Automatic Tensile Testing Machine using Lutron Force Gauge, Tensiometer and Stepper Motor
 
 This is the control code used for the tensile testing machine in Lung-pan's lab. 
-The setup consists of an automatic tensiometer drived by a stepper motor along with a Lutron force gauge.
+The setup consists of an automatic tensiometer driven by a stepper motor along with a Lutron force gauge.
 
 
 ## Using the tensile testing machine
 The Arduino board on the test bench has the proper code uploaded already. 
 To use the testing machine, simply hook up the motor driver with **5 - 12V power supply** (red and blue power cords), connect the Arduino and Force Gauge to the computer using the white **USB hub** in the back, then run **tensile_test_interface.py**.
 
-The **tensile_test_interface.py** would prompt relevent entries (filename for the csv, moving direction) for the specific tensile test, then machine will start performing the test automatically. 
+The **tensile_test_interface.py** would prompt relevant entries (filename for the csv, moving direction) for the specific tensile test, then the machine will start performing the test automatically. 
 **Remember to first zero the caliper.**
-Once a fracture is detected (i.e. measured force is less than 0.5 x Max_Force), the machine will stop; then the program would prompt an input for the final value (position) on the caliper.
+Once a fracture is detected (i.e. measured force is less than 0.5 x Max_Force), the machine will stop; then the program would prompt input for the final value (position) on the caliper.
 
 Default speed:  1 mm / min. To use different speed, add the following code to the python script:
 ~~~
