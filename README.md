@@ -3,6 +3,8 @@
 This is the control code used for the tensile testing machine in Lung-pan's lab. 
 The setup consists of an automatic tensiometer drived by a stepper motor along with a Lutron force gauge.
 
+
+## Using the tensile testing machine
 The Arduino board on the test bench has the proper code uploaded already. 
 To use the testing machine, simply hook up the motor driver with **5 - 12V power supply**, connect the Arduino and Force Gauge to the computer using the **USB hub** in the back, then run **tensile_test_interface.py**.
 
@@ -18,7 +20,7 @@ where TIME is the amount of time to travel 1 mm distance.
 
 
 
-## Supplementary files includes: 
+## Supplementary files 
 
 **Motor_control/Motor_control.ino**: the Arduino code used to control the stepper motor
 
