@@ -6,7 +6,7 @@ The setup consists of an automatic tensiometer drived by a stepper motor along w
 
 ## Using the tensile testing machine
 The Arduino board on the test bench has the proper code uploaded already. 
-To use the testing machine, simply hook up the motor driver with **5 - 12V power supply**, connect the Arduino and Force Gauge to the computer using the **USB hub** in the back, then run **tensile_test_interface.py**.
+To use the testing machine, simply hook up the motor driver with **5 - 12V power supply** (red and blue power cords), connect the Arduino and Force Gauge to the computer using the white **USB hub** in the back, then run **tensile_test_interface.py**.
 
 The **tensile_test_interface.py** would prompt relevent entries (filename for the csv, moving direction) for the specific tensile test, then machine will start performing the test automatically. 
 **Remember to first zero the caliper.**
