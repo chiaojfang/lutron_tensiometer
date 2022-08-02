@@ -16,7 +16,12 @@ mt_ser.write(bytes('t TIME\n','utf-8')) // Default: TIME = 60
 ~~~
 where TIME is the amount of time to travel 1 mm distance.
 
-Supplementary files includes: 
+
+
+## Supplementary files includes: 
+
 **Motor_control/Motor_control.ino**: the Arduino code used to control the stepper motor
+
 **Lutron_Readout/lutron_interface.py**: Reads the measurement from the Lutron force gauge via the RS-232 serial interface (see force gauge manual for details). Sample rate ~3.4 Hz. 
+
 **Laser_cut_files** contains the vector files of the laser-cut pieces on the device.
