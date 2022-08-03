@@ -12,7 +12,7 @@ The **tensile_test_interface.py** would prompt relevant entries (filename for th
 **Remember to first zero the caliper.**
 Once a fracture is detected (i.e. measured force is less than 0.5 x Max_Force), the machine will stop; then the program would prompt input for the final value (position) on the caliper.
 
-Default speed:  1 mm / min. To use different speed, add the following code to the python script:
+Default speed:  1 mm / min. To use different speed, add the following code after line 28 in the python script:
 ~~~
 mt_ser.write(bytes('t TIME\n','utf-8')) // Default: TIME = 60
 ~~~
